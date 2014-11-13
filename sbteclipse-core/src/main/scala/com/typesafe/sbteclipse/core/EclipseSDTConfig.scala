@@ -53,10 +53,10 @@ private trait EclipseSDTConfig {
     TakesArg("Yrecursion"),
     Flag("Yself-in-annots"),
     ColonSeparated("Ystruct-dispatch"),
-    Flag("Ywarn-dead-code")
+    Flag("Ywarn-dead-code"),
 
-	TakesArg("scalaVersion")
-	TakesArg("scalaInstallation"))
+	TakesArg("installation"),
+	TakesArg("sourceLevel"))
 	
   private sealed trait SDTOption {
     def name: String
