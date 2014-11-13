@@ -55,8 +55,8 @@ private trait EclipseSDTConfig {
     ColonSeparated("Ystruct-dispatch"),
     Flag("Ywarn-dead-code"),
 
-	TakesArg("installation"),
-	TakesArg("sourceLevel"))
+	Flag("installation"),
+	Flag("sourceLevel"))
 	
   private sealed trait SDTOption {
     def name: String
